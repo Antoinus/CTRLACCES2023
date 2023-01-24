@@ -1,0 +1,47 @@
+
+
+association n/n
+--> clés primaires des tables asso (idpers_ idporte_)
+   --> intervention possible sur la struct de la bdd
+   --> tb générée : primarkey constituée de tt les colonnes des k prim des tb associées
+     --> couple personne porte en kprim 
+         --> ATTENTION AU DIMANCHE (quelle position : 1er jour ou Der jour ? DayOfWeek() )
+                datetime python (MODULO)
+    --> AUTORISER LE NULL 
+
+
+STAGIAIRE:
+DateDebut DateFin (NULL on type datetime)
+
+procédures stockées & déclencheurs (triggers)
+prep rqt sql et l'enregistrer ds bdd
+trigger --> ctrl d'evenement qui la declenche regulierement
+mep trigger ncssite param MySQL
+
+nettoyer les auto° des gens qui ont quitté l'ent tous les X(tps)
+disctinct° entre Intervenant ext et Stagiaire(pers duree + prolongee)
+
+1ligne mm porte mm personne de 13h30 à 18h....le mercredi
+
+SELECT * FROM (tables) WHERE DATE = AUJOURDHUI OU JOURSEMAINE = JOURPRESENT ET HEURE COMPRISE ENTRE HEUREDEBUT ET HEUREFIN;
+--> si au moins une ligne rendue = autorisation acceptée
+
+chaque ent:SOR ENREGISTR2E :
+ QUI | QL DATE | E/S?
+
+-------------------------
+ENTITE "POINTAGES"
+QL DATE
+QL HR
+QL SENS
+-------------------------
+
+Association "EFFECTUER"
+par 1 seule personne
+1pers peut faire plz pointages.
+
+
+
+Figma possible mais ne pas trop pousser !!
+
+evolutions possibles...
