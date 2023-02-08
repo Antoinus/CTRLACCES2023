@@ -1,0 +1,12 @@
+<form action="submit.php" method="post">
+  <label for="name">Nom :</label>
+  <input type="text" id="name" name="name"><br><br>
+
+  <label for="firstname">Prénom :</label>
+  <input type="text" id="firstname" name="firstname"><br><br>
+
+  <label for="badge">Numéro de badge (en hexadécimal) :</label>
+  <input type="text" id="badge" name="badge"><br><br>
+
+  <input type="submit" value="Envoyer">
+</form>
